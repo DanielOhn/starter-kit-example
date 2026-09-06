@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pawsitive Mobile Grooming — Book a Visit</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <span class="brand">🐾 Pawsitive Mobile Grooming</span>
+      <a class="nav-link" href="#booking">Book Now</a>
+    </nav>
+    <div class="hero-content">
+      <h1>Grooming that comes to your driveway.</h1>
+      <p class="subtitle">
+        Full-service mobile grooming for dogs and cats in the Yuma area.
+        No cages, no waiting rooms — just your pet, freshly groomed, at home.
+      </p>
+      <a href="#booking" class="cta">Book an Appointment</a>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2>Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Bath &amp; Brush</h3>
+        <p>Shampoo, blow-dry, and brush-out. Great for regular upkeep.</p>
+        <span class="price">from $45</span>
+      </div>
+      <div class="service-card">
+        <h3>Full Groom</h3>
+        <p>Bath, haircut, nail trim, ear cleaning — the whole package.</p>
+        <span class="price">from $75</span>
+      </div>
+      <div class="service-card">
+        <h3>Nail Trim Only</h3>
+        <p>Quick in-and-out nail trim, no bath required.</p>
+        <span class="price">from $15</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Book a Visit</h2>
+    <p class="booking-sub">Fill this out and we'll confirm your appointment by email or phone.</p>
+
+    <form id="booking-form" class="booking-form">
+      <div class="form-row">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-row">
+        <label for="phone">Phone *</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+      <div class="form-row two-col">
+        <div>
+          <label for="petName">Pet's Name</label>
+          <input type="text" id="petName" name="petName" />
+        </div>
+        <div>
+          <label for="petType">Pet Type *</label>
+          <select id="petType" name="petType" required>
+            <option value="">Select...</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row two-col">
+        <div>
+          <label for="service">Service *</label>
+          <select id="service" name="service" required>
+            <option value="">Select...</option>
+            <option value="Bath & Brush">Bath &amp; Brush</option>
+            <option value="Full Groom">Full Groom</option>
+            <option value="Nail Trim Only">Nail Trim Only</option>
+          </select>
+        </div>
+        <div>
+          <label for="preferredDate">Preferred Date *</label>
+          <input type="date" id="preferredDate" name="preferredDate" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Anything we should know? (temperament, allergies, gate code, etc.)"></textarea>
+      </div>
+
+      <button type="submit" class="cta">Request Appointment</button>
+      <p id="form-message" class="form-message"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Pawsitive Mobile Grooming — a demo project built as a flat-rate MVP example.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

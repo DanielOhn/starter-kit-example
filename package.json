@@ -1,0 +1,14 @@
+{
+  "name": "pawsitive-mobile-grooming",
+  "version": "1.0.0",
+  "description": "Local Service Business Starter Kit - a flat-rate MVP demo (landing page + booking form + admin view) for a fictional mobile pet grooming business.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

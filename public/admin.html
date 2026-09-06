@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin — Pawsitive Mobile Grooming</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" style="padding-bottom: 2rem;">
+    <nav class="nav">
+      <span class="brand">🐾 Pawsitive Mobile Grooming — Admin</span>
+      <a class="nav-link" href="index.html">View Site</a>
+    </nav>
+  </header>
+
+  <div class="admin-wrap">
+    <h2>Booking Requests</h2>
+    <table id="bookings-table">
+      <thead>
+        <tr>
+          <th>Date Requested</th>
+          <th>Client</th>
+          <th>Pet</th>
+          <th>Service</th>
+          <th>Preferred Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="bookings-body">
+        <tr><td colspan="6">Loading...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
