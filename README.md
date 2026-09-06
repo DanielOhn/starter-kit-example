@@ -1,6 +1,6 @@
 # Pawsitive Mobile Grooming — Local Service Business Starter Kit
 
-A small, complete example of the kind of MVP I build for small businesses and solo
+A small, complete example of the kind of MVP built for small businesses and solo
 founders: a polished landing page, a working booking form backed by a real API, and
 an admin dashboard to manage incoming requests — shipped fast, with no unnecessary
 complexity.
@@ -11,7 +11,7 @@ to stand in for the flat-rate offer described below.
 **The pitch this demonstrates:** $400 flat — a simple booking/tracking app MVP,
 built in about 2 weeks, fixed scope, no surprise hours.
 
-> **Live demo:** _add your deployed URL here after the first deploy._
+> **Live demo:** https://pawsitive-mobile-grooming.onrender.com — [admin dashboard](https://pawsitive-mobile-grooming.onrender.com/admin.html)
 
 ## What's in it
 
@@ -91,8 +91,9 @@ the instance restarts and the server re-seeds its sample data. That's fine for a
 demo — visitors can still submit a booking and watch it appear in the dashboard. To
 persist for real, attach a disk and point `DATA_FILE` at it, or swap in a database.
 
-**Before sharing the link:** replace `public/og-image.svg` with a PNG screenshot and
-point `og:image` at its absolute URL — most link-preview scrapers ignore SVG.
+`public/og-image.png` is a real screenshot of the live hero section, and `og:image`
+points at its absolute URL, so link previews (Slack, iMessage, Twitter/X) render
+correctly when the link is shared.
 
 ## Note on the admin view
 
