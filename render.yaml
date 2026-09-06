@@ -1,0 +1,16 @@
+# One-click deploy config for Render (https://render.com).
+# Point a new Blueprint at this repo and it picks everything up from here.
+services:
+  - type: web
+    name: pawsitive-mobile-grooming
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # The free tier has an ephemeral filesystem: bookings reset when the
+      # instance restarts, and the server re-seeds sample data on boot.
+      # Attach a disk (paid) and set DATA_FILE to persist them for real.

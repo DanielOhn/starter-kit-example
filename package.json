@@ -10,5 +10,15 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "express",
+    "booking",
+    "mvp",
+    "small-business",
+    "portfolio"
+  ]
 }
